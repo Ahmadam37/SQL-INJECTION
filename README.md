@@ -27,25 +27,34 @@
 
 ---
 
-## 🚨 Types of SQL Injection  
+## 🚨 Types of SQL Injection    
 
-### 1. In-Band SQL Injection  
+### In-Band SQL Injection  
 It occurs when the attacker uses the same communication channel to inject malicious SQL code.  
-   - **Error-Based Injection:** Exploits database error messages to extract data.  
-   - **Union-Based Injection:** Uses the `UNION` operator to combine and retrieve data from multiple tables.  
 
-### 2. Blind SQL Injection  
-   - **Boolean-Based Blind Injection:** Sends queries that return true/false and observes application behavior.  
-   - **Time-Based Blind Injection:** Uses queries that trigger time delays to infer responses.  
+#### Error-Based Injection  
+Exploits database error messages to extract data.  
 
-### 3. Out-of-Band SQL Injection  
+#### Union-Based Injection  
+Uses the `UNION` operator to combine and retrieve data from multiple tables.  
+
+### Blind SQL Injection  
+
+#### Boolean-Based Blind Injection  
+Sends queries that return true/false and observes application behavior.  
+
+#### Time-Based Blind Injection  
+Uses queries that trigger time delays to infer responses.  
+
+### Out-of-Band SQL Injection  
 Relies on a separate communication channel (e.g., DNS or HTTP) for data retrieval, often used when in-band methods are unavailable.  
 
-### 4. Second-Order SQL Injection  
+### Second-Order SQL Injection  
 Malicious input is stored in the database and executed later when retrieved by the application.  
 
-### 5. Stored (Persistent) SQL Injection  
+### Stored Persistent SQL Injection  
 Payload is saved in the database (e.g., via forms) and executed when data is displayed, affecting all users.  
+
 
 ---
 
