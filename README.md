@@ -54,7 +54,7 @@
 
    Keep adding columns (e.g., `NULL, NULL, NULL --`) until you identify the correct number of columns that the query expects.
 
-
+--
 ### Blind SQL Injection  
 
 #### Boolean-Based Blind Injection  
