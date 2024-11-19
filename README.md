@@ -12,7 +12,7 @@
 ---
 
 ## 📋 Table of Contents
-1. [🚨 Types of SQL Injection](#-types-of-sql-injection)  
+1. [🚨 Types of SQL Injection](#types-of-sql-injection)  
    - [In-Band SQL Injection](#in-band-sql-injection)  
      - [Error-Based Injection](#error-based-injection)  
      - [Union-Based Injection](#union-based-injection)  
@@ -21,8 +21,9 @@
      - [Time-Based Blind Injection](#time-based-blind-injection)  
    - [Out-of-Band SQL Injection](#out-of-band-sql-injection)  
    - [Second-Order SQL Injection](#second-order-sql-injection)  
-   - [Stored (Persistent) SQL Injection](#stored-persistent-sql-injection)  
-2. [🛡️ Mitigation Strategies](#️-mitigation-strategies)  
+   - [Stored Persistent SQL Injection](#stored-persistent-sql-injection)  
+2. [🛡️ Mitigation Strategies](#mitigation-strategies)  
+
 
 ---
 
