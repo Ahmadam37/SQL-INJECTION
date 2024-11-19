@@ -7,7 +7,7 @@
 
 # 🛡️ SQL Injection: Types and Mitigation  
 
-**SQL Injection** is a critical web security vulnerability that allows attackers to interfere with database queries. This document outlines the types of SQL Injection attacks and how to prevent them.  
+**SQL Injection** is a critical web security vulnerability that allows attackers to interfere with database queries. This document outlines the types of SQL Injection attacks and how to prevent them.
 
 ---
 
@@ -26,7 +26,16 @@
 
 
 ---
+### Important Considerations Before Exploring SQL Injection Types
 
+Before diving into the different types of *SQL Injection*, it's essential to first identify the type of database you're dealing with. For example, when working with an **Oracle** database, understanding its specific syntax and quirks is crucial, such as how to write queries and use comments correctly.
+
+#### Useful Reference:
+For a comprehensive SQL Injection cheat sheet, check out this great resource from PortSwigger:  
+[SQL Injection Cheat Sheet - PortSwigger](https://portswigger.net/web-security/sql-injection/cheat-sheet)
+
+
+---
 ## 🚨 Types of SQL Injection    
 
 ### In-Band SQL Injection  
@@ -53,6 +62,7 @@
        ```
 
    Keep adding columns (e.g., `NULL, NULL, NULL --`) until you identify the correct number of columns that the query expects.
+  
 
 ---
 ### Blind SQL Injection  
