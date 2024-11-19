@@ -62,6 +62,35 @@ For a comprehensive SQL Injection cheat sheet, check out this great resource fro
        ```
 
    Keep adding columns (e.g., `NULL, NULL, NULL --`) until you identify the correct number of columns that the query expects.
+
+  for real example from PortS here in the example i tried to inject the SQL code
+   - first inject
+      ```sql
+       ' UNION SELECT NULL-- 
+       ```
+      ![image](https://github.com/user-attachments/assets/234954be-999d-4bda-b9c8-cf689968c6e1)
+
+      After that i recive the Internal server error
+     ![image](https://github.com/user-attachments/assets/b3ca285a-8028-41de-b43b-e811342ecbfe)
+ - Second Injection
+     ```sql
+       ' UNION SELECT NULL#
+       ```
+
+ ![image](https://github.com/user-attachments/assets/ca8e4157-4b96-45e9-9b40-608fcfc2a402)
+
+
+  - Third Injection:
+    ```sql
+       ' UNION SELECT NULL,NULL-- 
+       ```
+    ![image](https://github.com/user-attachments/assets/7dd060c8-59f5-4205-8ec9-874cd8f47936)
+
+     After that i recive 200 ok and the page interact with the injected SQL code. That means it is vulnirble
+     ![image](https://github.com/user-attachments/assets/8d091b5b-e01d-48ab-8d14-9dbe45e3d7e4)
+
+    
+
   
 
 ---
