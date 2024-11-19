@@ -63,31 +63,40 @@ For a comprehensive SQL Injection cheat sheet, check out this great resource fro
 
    Keep adding columns (e.g., `NULL, NULL, NULL --`) until you identify the correct number of columns that the query expects.
 
-  for real example from PortS here in the example i tried to inject the SQL code
-   - first inject
-      ```sql
-       ' UNION SELECT NULL-- 
-       ```
-      ![image](https://github.com/user-attachments/assets/234954be-999d-4bda-b9c8-cf689968c6e1)
+### Real Example from PortSwigger
 
-      After that i recive the Internal server error
-     ![image](https://github.com/user-attachments/assets/b3ca285a-8028-41de-b43b-e811342ecbfe)
- - Second Injection
-     ```sql
-       ' UNION SELECT NULL#
-       ```
+In this example, I attempted to inject SQL code into the application to test for a vulnerability.
+
+#### First Injection
+   ```sql
+     ' UNION SELECT NULL-- 
+   ```
+![image](https://github.com/user-attachments/assets/234954be-999d-4bda-b9c8-cf689968c6e1)
+
+ However, I received an Internal Server Error as a result.
+ 
+   ![image](https://github.com/user-attachments/assets/b3ca285a-8028-41de-b43b-e811342ecbfe)
+   
+ #### Second Injection
+   ```sql
+      ' UNION SELECT NULL#
+   ```
 
  ![image](https://github.com/user-attachments/assets/ca8e4157-4b96-45e9-9b40-608fcfc2a402)
 
+ As well this not working and we will keep trying:
+ ![image](https://github.com/user-attachments/assets/03459deb-cd7d-4f62-9cb9-4325a742ab5b)
 
-  - Third Injection:
-    ```sql
-       ' UNION SELECT NULL,NULL-- 
-       ```
-    ![image](https://github.com/user-attachments/assets/7dd060c8-59f5-4205-8ec9-874cd8f47936)
+ #### Third Injection:
+  ```sql
+      ' UNION SELECT NULL#
+   ```
 
-     After that i recive 200 ok and the page interact with the injected SQL code. That means it is vulnirble
-     ![image](https://github.com/user-attachments/assets/8d091b5b-e01d-48ab-8d14-9dbe45e3d7e4)
+![image](https://github.com/user-attachments/assets/7dd060c8-59f5-4205-8ec9-874cd8f47936)
+
+After this injection, I received a 200 OK response, and the page interacted with the injected SQL code. This indicates that the application is vulnerable.
+
+![image](https://github.com/user-attachments/assets/8d091b5b-e01d-48ab-8d14-9dbe45e3d7e4)
 
     
 
