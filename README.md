@@ -107,7 +107,7 @@ Now, we can inject this SQL code to know what is the version of the database.
   ```sql
       ' UNION SELECT version(),NULL--
    ```
-  ![image](https://github.com/user-attachments/assets/f920f53e-cdc9-47e5-ae29-bc8e971a2fd5)
+![image](https://github.com/user-attachments/assets/431c8ab3-7fec-4073-b62c-b358ed2af01c)
 
 
 
