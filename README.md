@@ -36,18 +36,18 @@ For a comprehensive SQL Injection cheat sheet, check out this great resource fro
 
 
 ---
-## 🚨 Types of SQL Injection    
+# 🚨 Types of SQL Injection    
 
-### In-Band SQL Injection  
+## In-Band SQL Injection  
 - It occurs when the attacker uses the same communication channel to inject malicious SQL code.
    
 
-#### Error-Based Injection  
+### Error-Based Injection  
 - Exploits database error messages to extract data.  
 
-#### Union-Based Injection  
+### Union-Based Injection  
 - Uses the `UNION` operator to combine and retrieve data from multiple tables.
-   ### How to Prove the Concept of a Vulnerable Application Database with *Union-Based* Injection
+   #### How to Prove the Concept of a Vulnerable Application Database with *Union-Based* Injection
 
   To prove that an application database is vulnerable to *Union-Based* SQL Injection, follow these steps:
 
@@ -63,7 +63,7 @@ For a comprehensive SQL Injection cheat sheet, check out this great resource fro
 
    Keep adding columns (e.g., `NULL, NULL, NULL --`) until you identify the correct number of columns that the query expects.
 
-### Real Example from PortSwigger
+#### Real Example from PortSwigger
 
 In this example, I attempted to inject SQL code into the application to test for a vulnerability.
 
