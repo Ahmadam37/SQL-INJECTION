@@ -94,13 +94,32 @@ In this example, I attempted to inject SQL code into the application to test for
 
 ![image](https://github.com/user-attachments/assets/7dd060c8-59f5-4205-8ec9-874cd8f47936)
 
-After this injection, I received a 200 OK response, and the page interacted with the injected SQL code. This indicates that the application is vulnerable.
+  After this injection, I received a **200 OK** response, and the page interacted with the injected SQL code. This indicates that the application is **vulnerable** to SQL Injection.
+```sql
+      ' UNION SELECT NULL,NULL--
+   ```
 
 ![image](https://github.com/user-attachments/assets/8d091b5b-e01d-48ab-8d14-9dbe45e3d7e4)
 
     
+Now, we can inject this SQL code to know what is the version of the database.
 
-  
+  ```sql
+      ' UNION SELECT version(),NULL--
+   ```
+  ![image](https://github.com/user-attachments/assets/f920f53e-cdc9-47e5-ae29-bc8e971a2fd5)
+
+
+
+
+This is great and valuable information, as now we know how to deal with this database.
+
+
+If you know the database is injectable, you understand how many columns it has, and you know the database version, you have almost gathered all the essential information and knowledge about the application you're testing.
+
+You can practice and deep dive into **UNION SQL Injection** by visiting [PortSwigger](https://portswigger.net) and practicing on their labs.
+
+
 
 ---
 ### Blind SQL Injection  
