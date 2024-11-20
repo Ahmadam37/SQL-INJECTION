@@ -45,7 +45,7 @@ For a comprehensive SQL Injection cheat sheet, check out this great resource fro
 ### Error-Based Injection  
 - Exploits database error messages to extract data.
 
-***
+___
 
 ### Union-Based Injection  
 - Uses the `UNION` operator to combine and retrieve data from multiple tables.
