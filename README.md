@@ -124,7 +124,7 @@ You can practice and deep dive into **UNION SQL Injection** by visiting [PortSwi
 
 
 ---
-### Blind SQL Injection  
+## Blind SQL Injection  
 
 #### Boolean-Based Blind Injection  
 - Sends queries that return true/false and observes application behavior.  
