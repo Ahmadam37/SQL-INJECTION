@@ -46,8 +46,7 @@ For a comprehensive SQL Injection cheat sheet, check out this great resource fro
 - Exploits database error messages to extract data.
 - In **Error-Based SQL Injection**, the key point is that you receive an error message from the database you are dealing with.  
 
-  If you attempt to inject SQL code into the database and receive an error message directly from the database, it indicates that the database is             
-  **vulnerable** to Error-Based SQL Injection.
+  If you attempt to inject SQL code into the database and receive an error message directly from the database, it indicates that the database is          **vulnerable** to Error-Based SQL Injection.
 
 <hr style="border: 0.1px">
 
